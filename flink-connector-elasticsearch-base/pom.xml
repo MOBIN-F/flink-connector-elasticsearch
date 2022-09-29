@@ -66,6 +66,14 @@ under the License.
 			<optional>true</optional>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-table-runtime</artifactId>
+			<version>${flink.version}</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+
 		<!-- Elasticsearch -->
 
 		<dependency>

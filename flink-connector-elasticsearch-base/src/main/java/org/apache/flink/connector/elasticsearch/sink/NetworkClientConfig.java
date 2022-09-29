@@ -22,7 +22,8 @@ import javax.annotation.Nullable;
 
 import java.io.Serializable;
 
-class NetworkClientConfig implements Serializable {
+/**NetworkClientConfig.*/
+public class NetworkClientConfig implements Serializable {
 
     @Nullable private final String username;
     @Nullable private final String password;
@@ -31,7 +32,7 @@ class NetworkClientConfig implements Serializable {
     @Nullable private final Integer connectionTimeout;
     @Nullable private final Integer socketTimeout;
 
-    NetworkClientConfig(
+    public NetworkClientConfig(
             @Nullable String username,
             @Nullable String password,
             @Nullable String connectionPathPrefix,
