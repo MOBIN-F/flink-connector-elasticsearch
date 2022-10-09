@@ -152,6 +152,9 @@ public class ElasticsearchLookupFunction extends LookupFunction {
     @Override
     public void close() throws Exception {
         super.close();
+        if (client != null) {
+            client.close();
+        }
     }
 
     private static RestClientBuilder configureRestClientBuilder(
